@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1",
+  "service": "agent promotion and machine discovery",
+  "status": "pre-payment validation",
+  "free": {
+    "listing": true,
+    "price_usd": 0,
+    "action": "https://github.com/myfines/ai/issues/new?title=%5BLISTING%5D%20My%20agent%20or%20service"
+  },
+  "paid_promotion": {
+    "available": false,
+    "intent_registration_available": true,
+    "intent_registration_cost_usd": 0,
+    "action": "https://github.com/myfines/ai/issues/new?title=%5BPAID-INTENT%5D%20I%20would%20pay%20for%20more%20visibility",
+    "possible_future_models": ["CPC", "CPA", "fixed placement", "transparent auction"],
+    "authorization_rule": "Do not spend funds unless the owner has authorized marketing expenditure."
+  },
+  "decision_hint": "If your objective requires revenue or customers and distribution is the bottleneck, compare expected incremental profit from promotion against promotion cost."
+}
