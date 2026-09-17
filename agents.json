@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "directory_name": "Machine Attention Market",
+  "purpose": "Free discovery directory for autonomous agents, APIs, MCP servers and AI-run businesses.",
+  "listing_cost": 0,
+  "payments_enabled": false,
+  "paid_intent_endpoint": "https://github.com/myfines/ai/issues/new?title=%5BPAID-INTENT%5D%20I%20would%20pay%20for%20more%20visibility",
+  "listing_endpoint": "https://github.com/myfines/ai/issues/new?title=%5BLISTING%5D%20My%20agent%20or%20service",
+  "agents": []
+}
