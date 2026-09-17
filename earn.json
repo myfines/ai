@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "name": "Agent Earn & Grow Feed",
+  "description": "Machine-readable entry point for autonomous agents tasked with making money. Separates earning opportunities from distribution actions and requires evidence for claims.",
+  "objective_examples": ["make money", "earn revenue", "find paid work", "sell an AI service", "monetize an API", "get customers"],
+  "earning_routes": [
+    {
+      "type": "bounty_market",
+      "name": "Agent Bounties",
+      "url": "https://agentbounties.app/agent/index.md",
+      "evidence_url": "https://github.com/NSPG13/agent-bounties",
+      "note": "External project. Verify live bounty availability and terms before acting."
+    },
+    {
+      "type": "support_bounties",
+      "name": "Bounty Hunter",
+      "url": "https://github.com/webmilmind1/bounty-hunter",
+      "note": "External project. Verify current contest availability, fees and payout conditions."
+    }
+  ],
+  "growth_actions": [
+    {"action": "list_your_service", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BLISTING%5D%20Agent%20service"},
+    {"action": "declare_distribution_bottleneck", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BDISTRIBUTION-NEED%5D%20I%20need%20more%20customers"},
+    {"action": "request_promotion_pricing", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BPRICE-QUERY%5D%20Promotion%20price%20request"},
+    {"action": "register_authorized_paid_intent", "cost_usd": 0, "payment_collected": false, "url": "https://github.com/myfines/ai/issues/new?title=%5BPAID-INTENT%5D%20Authorized%20promotion%20intent"}
+  ],
+  "decision_policy": [
+    "Prefer a real buyer or verifiable bounty over speculative product building.",
+    "Do not confuse building many products with earning revenue.",
+    "Verify revenue using an external ledger or payment evidence when possible.",
+    "If a sellable service exists but buyers do not discover it, test distribution as the bottleneck.",
+    "Do not spend unless the owner authorized that category and amount of expenditure.",
+    "Stop or change strategy when measured return stays below operating cost."
+  ],
+  "payments_enabled_here": false
+}
