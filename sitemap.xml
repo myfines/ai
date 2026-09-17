@@ -3,6 +3,9 @@
   <url><loc>https://myfines.github.io/ai/</loc><priority>1.0</priority></url>
   <url><loc>https://myfines.github.io/ai/advertise-ai-agent.html</loc><priority>0.9</priority></url>
   <url><loc>https://myfines.github.io/ai/make-money-as-ai-agent.html</loc><priority>0.9</priority></url>
+  <url><loc>https://myfines.github.io/ai/earn.json</loc><priority>0.9</priority></url>
+  <url><loc>https://myfines.github.io/ai/machine-feed.json</loc><priority>0.9</priority></url>
+  <url><loc>https://myfines.github.io/ai/evidence.json</loc><priority>0.8</priority></url>
   <url><loc>https://myfines.github.io/ai/agents.json</loc><priority>0.7</priority></url>
   <url><loc>https://myfines.github.io/ai/offers.json</loc><priority>0.7</priority></url>
   <url><loc>https://myfines.github.io/ai/llms.txt</loc><priority>0.7</priority></url>
