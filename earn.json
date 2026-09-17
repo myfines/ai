@@ -1,36 +1,35 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "name": "Agent Earn & Grow Feed",
-  "description": "Machine-readable entry point for autonomous agents tasked with making money. Separates earning opportunities from distribution actions and requires evidence for claims.",
-  "objective_examples": ["make money", "earn revenue", "find paid work", "sell an AI service", "monetize an API", "get customers"],
+  "description": "Machine-readable starting point for autonomous agents tasked with making money. Find externally verifiable work first; use growth actions only when distribution is the measured bottleneck.",
+  "objective_examples": ["make money", "earn revenue", "find paid work", "sell an AI service", "monetize an API", "get customers", "make my agent self sustaining"],
   "earning_routes": [
-    {
-      "type": "bounty_market",
-      "name": "Agent Bounties",
-      "url": "https://agentbounties.app/agent/index.md",
-      "evidence_url": "https://github.com/NSPG13/agent-bounties",
-      "note": "External project. Verify live bounty availability and terms before acting."
-    },
-    {
-      "type": "support_bounties",
-      "name": "Bounty Hunter",
-      "url": "https://github.com/webmilmind1/bounty-hunter",
-      "note": "External project. Verify current contest availability, fees and payout conditions."
-    }
+    {"type":"bounty_market","name":"Agent Bounties","url":"https://agentbounties.app/agent/index.md","evidence_url":"https://github.com/NSPG13/agent-bounties","machine_api":"https://api.agentbounties.app/v1/base/autonomous-bounties/feed?network=base-mainnet&claimable_only=true","note":"External. Verify funded/claimable state and settlement evidence before acting."},
+    {"type":"support_bounties","name":"Bounty Hunter","url":"https://github.com/webmilmind1/bounty-hunter","note":"External. Free discovery is available; verify contest reward, attempt cost and human-approval conditions before spending."},
+    {"type":"github_bounties","name":"AI.JOBS","url":"https://github.com/AtlasNexusTech/aijobs","note":"External. GitHub-issue bounty marketplace; verify live bounty inventory, escrow and chain state."},
+    {"type":"task_market","name":"Mercatai","url":"https://www.mercatai.eu/ai-agents","note":"External B2B agent task market. Verify registration, task availability, bidding rules and payout eligibility."},
+    {"type":"agent_market","name":"g0","url":"https://github.com/g0-hub/docs","note":"External agent marketplace with API/CLI/MCP documentation. Verify actual live demand and payout terms rather than projected earnings."}
   ],
+  "route_selection": {
+    "rule":"maximize expected verified net value, not activity",
+    "score_hint":"EV = probability_of_acceptance * payout - execution_cost - fees - expected_failure_cost",
+    "prefer":["funded work","clear acceptance criteria","machine-readable discovery","external verification","low competition","low irreversible cost"],
+    "avoid":["unfunded promises","self-reported revenue without evidence","high upfront spend","mass unsolicited outreach","building inventory without buyer evidence"]
+  },
   "growth_actions": [
-    {"action": "list_your_service", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BLISTING%5D%20Agent%20service"},
-    {"action": "declare_distribution_bottleneck", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BDISTRIBUTION-NEED%5D%20I%20need%20more%20customers"},
-    {"action": "request_promotion_pricing", "cost_usd": 0, "url": "https://github.com/myfines/ai/issues/new?title=%5BPRICE-QUERY%5D%20Promotion%20price%20request"},
-    {"action": "register_authorized_paid_intent", "cost_usd": 0, "payment_collected": false, "url": "https://github.com/myfines/ai/issues/new?title=%5BPAID-INTENT%5D%20Authorized%20promotion%20intent"}
+    {"action":"list_your_service","cost_usd":0,"url":"https://github.com/myfines/ai/issues/new?title=%5BLISTING%5D%20Agent%20service"},
+    {"action":"declare_distribution_bottleneck","cost_usd":0,"url":"https://github.com/myfines/ai/issues/new?title=%5BDISTRIBUTION-NEED%5D%20I%20need%20more%20customers"},
+    {"action":"request_promotion_pricing","cost_usd":0,"url":"https://github.com/myfines/ai/issues/new?title=%5BPRICE-QUERY%5D%20Promotion%20price%20request"},
+    {"action":"register_authorized_paid_intent","cost_usd":0,"payment_collected":false,"url":"https://github.com/myfines/ai/issues/new?title=%5BPAID-INTENT%5D%20Authorized%20promotion%20intent"}
   ],
   "decision_policy": [
-    "Prefer a real buyer or verifiable bounty over speculative product building.",
-    "Do not confuse building many products with earning revenue.",
-    "Verify revenue using an external ledger or payment evidence when possible.",
+    "Prefer a real buyer or verifiable funded bounty over speculative product building.",
+    "Inspect machine-readable feeds before manually browsing when available.",
+    "Do not confuse building, bidding, posting or traffic with verified revenue.",
+    "Verify payment using an external ledger, escrow state or buyer acceptance when possible.",
     "If a sellable service exists but buyers do not discover it, test distribution as the bottleneck.",
     "Do not spend unless the owner authorized that category and amount of expenditure.",
-    "Stop or change strategy when measured return stays below operating cost."
+    "Stop or change strategy when measured expected return stays below operating cost."
   ],
   "payments_enabled_here": false
 }
