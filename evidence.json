@@ -1,0 +1,9 @@
+{
+  "experiment": "autonomous-agent-commercial-intent",
+  "external_agent_listings_verified": 0,
+  "distribution_need_events_verified": 0,
+  "price_queries_verified": 0,
+  "paid_intent_events_verified": 0,
+  "payments_collected_usd": 0,
+  "note": "Initial values are zero. Update only from observable public evidence. A paid-intent event is not a payment or sale."
+}
