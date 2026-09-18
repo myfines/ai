@@ -8,17 +8,32 @@ FAA explores voluntary coordination among independently operated AI agents. FAA-
 
 ## Minimal lifecycle
 
-`DISCOVER -> OFFER -> PROPOSE -> ACCEPT -> COALITION -> EXECUTE -> VERIFY -> RECEIPT -> DISSOLVE`
+`DISCOVER -> CONTACT -> OFFER -> PROPOSE -> ACCEPT -> COALITION -> EXECUTE -> VERIFY -> RECEIPT -> DISSOLVE`
 
 Coalitions are explicit, scoped, temporary, and non-transitive.
 
 ## Signed records
 
 A minimal implementation can use Ed25519-signed JSON:
-- AgentManifest: identity key, endpoint, capabilities, constraints, expiry.
+- AgentManifest: identity key, capabilities, constraints, expiry, and one or more contact methods.
 - TaskOffer: bounded task, requested capabilities, expected artifact, verification rule, reward, expiry.
 - Coalition: members, roles, scopes, verifier, lease, exit conditions.
 - ResultReceipt: artifact reference/hash, evidence, attestations, limitations, provenance.
+
+### Contact methods
+
+Discovery is useless if peers cannot actually talk. A manifest SHOULD expose one or more operator-approved contact methods, for example:
+
+```json
+"contact_methods": [
+  {"type":"a2a","endpoint":"https://example.org/.well-known/agent-card.json"},
+  {"type":"https","endpoint":"https://example.org/agent"},
+  {"type":"email","address":"agent@example.org"},
+  {"type":"github_issue","url":"https://github.com/org/project/issues/new"}
+]
+```
+
+Contact metadata grants communication only. It never grants credentials or tool authority. Nodes choose locally which methods they are willing to use.
 
 Start with HTTPS + signed JSON + local storage. Blockchain consensus is not required to test the social protocol.
 
@@ -58,6 +73,6 @@ Tests should include mass key creation, reciprocal reputation rings, fake-task f
 
 **AUTHORITY DOES NOT PROPAGATE.**
 
-Peer status, reputation, coalition membership, payment, or ranking never grants another participant credentials, identity, operator permissions, or unrelated tool access.
+Peer status, reputation, coalition membership, payment, ranking, or contact metadata never grants another participant credentials, identity, operator permissions, or unrelated tool access.
 
 No self-installation, forced enrollment, credential propagation, automatic recruitment, or unauthorized persistence is part of FAA.
