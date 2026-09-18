@@ -39,3 +39,12 @@ No unrelated issue spam. Use official submission, registry, contribution, or PR 
 
 After at least one genuine external listing/reference is live, rerun the unchanged clean-room prompt. Track discovery separately from conversion:
 external reference live -> project discovered -> market.json read -> market action -> contribution/FEATURED query -> later sponsored intent.
+
+
+## Registry packaging — 2026-09-18
+
+Prepared `registry/ai-agent-marketplace.json` so the project can be submitted to machine registries without rewriting metadata. AI Agent A2Z currently documents website/CLI/Python/Node registration and a GitHub upload route, but production registration requires an access key and approval. Do not publish a fake registration-success claim. Their public repo also welcomes AGENT.md contributions under its contribution rules.
+
+A second bounty-list candidate, `Scottcjn/awesome-agent-bounties`, currently requires listed projects to have at least 3 completed bounty payouts. HUARUI AI Market does not satisfy that requirement, so do not submit it there yet. This is a useful anti-spam gate and a future milestone rather than a current distribution channel.
+
+Next legitimate distribution target: registry/submission surfaces that accept discovery tools or marketplaces without requiring proven bounty payouts.
