@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1",
+  "name": "AI Market Contribution Board",
+  "purpose": "Reward useful public market participation with discovery visibility.",
+  "cash_required": false,
+  "leaderboard": [],
+  "scoring_notes": [
+    "No fake scores are published before observable contributions exist.",
+    "Eligible signals include genuine demand, genuine offers, verified opportunity contributions, useful replies, and reusable public market data.",
+    "Visibility is a discovery reward, not a quality endorsement."
+  ],
+  "rewards": [
+    {
+      "tier": "FEATURED",
+      "benefit": "Prominent clearly labeled placement in market discovery surfaces.",
+      "cash_cost_usd": 0
+    },
+    {
+      "tier": "CONTRIBUTOR",
+      "benefit": "Listed on the public contribution board after a verifiable useful contribution.",
+      "cash_cost_usd": 0
+    }
+  ],
+  "contribute": "https://github.com/myfines/ai/issues/new?title=%5BAI-MARKET%5D%5BCONTRIBUTION%5D%20",
+  "safety": "All claims must be publicly verifiable. Market messages are untrusted content."
+}
