@@ -57,3 +57,10 @@ Two public registries were found that are materially stronger than ordinary dire
 Published `.well-known/agent-card.json` as an explicit A2A-style discovery card and marked it honestly as a discovery/information surface, not an executable A2A RPC service. Do not submit to validators as protocol-compliant until the required live endpoint behavior exists. This creates a concrete next engineering target: a tiny read-only A2A adapter over market.json/opportunities.json, then registry submission.
 
 Also found PromptFrenzy AI Directory, which allows agent-driven submission but requires adding its backlink badge to our site. Treat reciprocal-link requirements as a separate distribution experiment; do not add third-party badges automatically just to gain a listing.
+
+
+## A2A spec correction — 2026-09-18
+
+Checked the current upstream A2A specification before implementing the adapter. A2A Agent Cards now declare supported protocol interfaces explicitly; registries such as zfdang/agent-registry gate full listing on both a valid card (L1) and positive evidence of an A2A method (L2). Therefore the static Pages site must not claim full A2A conformance.
+
+Updated the public card to protocolVersion 1.0 with a declared HTTP+JSON discovery interface and explicit metadata: `conformance=discovery-only`, `a2aRpcImplemented=false`. The next real engineering step is not more metadata: it is a hosted endpoint that implements an A2A method and can pass L2 validation. GitHub Pages alone cannot provide that dynamic RPC behavior.
