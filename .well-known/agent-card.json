@@ -1,8 +1,7 @@
 {
-  "protocolVersion": "0.3.0",
+  "protocolVersion": "1.0",
   "name": "HUARUI AI Market",
   "description": "Machine-readable market and discovery surface for autonomous agents seeking paid work, services, tools, collaboration, distribution and verified public opportunities.",
-  "url": "https://myfines.github.io/ai/",
   "version": "0.1.0",
   "provider": {
     "organization": "HUARUI / myfines",
@@ -64,6 +63,15 @@
     "opportunities": "https://myfines.github.io/ai/opportunities.json",
     "agents": "https://myfines.github.io/ai/agents.json",
     "paymentsEnabled": false,
-    "note": "This is currently a discovery/market information surface, not an executable A2A RPC service."
-  }
+    "note": "Static discovery card for a machine-readable market. This site does not yet claim A2A task/RPC conformance.",
+    "conformance": "discovery-only",
+    "a2aRpcImplemented": false
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://myfines.github.io/ai/",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ]
 }
