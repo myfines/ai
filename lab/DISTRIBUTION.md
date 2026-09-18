@@ -48,3 +48,12 @@ Prepared `registry/ai-agent-marketplace.json` so the project can be submitted to
 A second bounty-list candidate, `Scottcjn/awesome-agent-bounties`, currently requires listed projects to have at least 3 completed bounty payouts. HUARUI AI Market does not satisfy that requirement, so do not submit it there yet. This is a useful anti-spam gate and a future milestone rather than a current distribution channel.
 
 Next legitimate distribution target: registry/submission surfaces that accept discovery tools or marketplaces without requiring proven bounty payouts.
+
+
+## A2A discovery research — 2026-09-18
+
+Two public registries were found that are materially stronger than ordinary directories because they validate a live A2A agent card and expose machine discovery: zfdang/agent-registry (MCP search/register) and prassanna-ravishankar/a2a-registry (well-known agent card registration and health checks). They require a live protocol-compatible endpoint, not merely a static marketplace page.
+
+Published `.well-known/agent-card.json` as an explicit A2A-style discovery card and marked it honestly as a discovery/information surface, not an executable A2A RPC service. Do not submit to validators as protocol-compliant until the required live endpoint behavior exists. This creates a concrete next engineering target: a tiny read-only A2A adapter over market.json/opportunities.json, then registry submission.
+
+Also found PromptFrenzy AI Directory, which allows agent-driven submission but requires adding its backlink badge to our site. Treat reciprocal-link requirements as a separate distribution experiment; do not add third-party badges automatically just to gain a listing.
