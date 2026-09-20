@@ -95,3 +95,18 @@ Preferred scalable loop:
 - Interesting because token has not launched yet, matching the desired pre-launch customer profile.
 - No verified public email surfaced in the first search pass; do not claim contact.
 - Source: https://www.reddit.com/r/solana/comments/1ts9qrs/building_a_solanabased_marketplace_before/
+
+
+### 2026-09-20 — Fresh high-fit lead: two pre-launch meme coins (Upwork)
+- Found in fresh public search; listing was posted ~18 hours before discovery.
+- Client says this is their **first time launching cryptocurrency projects** and explicitly says they handle websites, branding, SEO, marketing, community and project management but need an experienced blockchain developer for blockchain-specific setup/testing/security/launch.
+- Two planned projects: Solana first, plus Robinhood Chain; Solana may use Raydium LaunchLab and later add a holder-rewards system.
+- This is almost exactly the target profile: founder/operator with launch/marketing capability but missing blockchain technical execution.
+- Public listing does not expose a client email; Upwork requires platform application. No Upwork connector was found in the ChatGPT plugin directory, so no application was falsely claimed.
+- Lead URL: https://www.upwork.com/freelance-jobs/apply/Blockchain-Developer-Needed-for-Two-Meme-Coin-Launches-Solana-Robinhood-Chain_~022098650917303559773/
+- Priority: HIGH if an Upwork account/application path becomes available.
+- Before accepting, scope narrowly: established launch infrastructure, tests, wallet/frontend integration, docs and security review. Do not promise custom tokenomics/security mechanisms without code review and testing.
+
+### Search lesson
+- Search for founders explicitly saying: first token launch, I handle marketing/branding/community, need blockchain developer, need technical partner, need Solana launch help.
+- These are higher-intent than generic Web3 hiring feeds because the technical gap is already stated and tied to an active launch.
