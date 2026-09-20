@@ -75,3 +75,23 @@ Preferred scalable loop:
 7. poll status;
 8. record accepted revenue only after payment;
 9. retain successful sources and task templates for repeatable operation.
+
+
+## Outreach log — pre-launch Web3 founders
+
+### 2026-09-20 — Jon Herbert Black
+- Source: public Reddit Web3 startup/cofounder discussion.
+- Public contact: jonherbertblack@gmail.com.
+- Context: described himself publicly as founder/developer of a Web3 startup and former product lead for a blockchain/non-custodial wallet company; open to Web3 startup discussion.
+- Outreach angle: offer one small paid technical task first rather than a large contract: landing page, Telegram/community bot, API integration, public on-chain data dashboard, automation, wallet-connected frontend, or MVP feature.
+- Safety boundary stated in email: no seed/private-key access; no market manipulation/artificial volume.
+- Gmail outreach sent successfully on 2026-09-20.
+- Gmail message ID: 1a0bed53033b6bcc.
+- Status: SENT / awaiting response.
+- Source discussion: https://www.reddit.com/r/web3/comments/1hixo5r/web3_startup_idea_validationlooking_for_cofounder/
+
+### Lead: RDII Network
+- Recent pre-token Solana project surfaced in public search: building marketplace utility first and explicitly planning RDIITOKEN later.
+- Interesting because token has not launched yet, matching the desired pre-launch customer profile.
+- No verified public email surfaced in the first search pass; do not claim contact.
+- Source: https://www.reddit.com/r/solana/comments/1ts9qrs/building_a_solanabased_marketplace_before/
