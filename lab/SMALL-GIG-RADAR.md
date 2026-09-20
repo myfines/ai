@@ -123,3 +123,15 @@ Preferred scalable loop:
 - Gmail message ID: 1a0bf2d4e4906333.
 - Status: SENT / awaiting response.
 - Source: https://ge.linkedin.com/in/levani-kharatishvili-77b061391
+
+
+### 2026-09-20 — EdgeTX custom RC hardware
+- Source: GitHub EdgeTX Discussion #6022.
+- Buyer need: paid collaboration integrating custom STM32H562 RC hardware with EdgeTX: SSD1306 SPI display, MLX90393 SPI gimbals, ELRS TX module, buttons/encoder/buzzer/LED/vibration and possible EdgeTX modifications.
+- Public email: Anton.evdakov@gmail.com.
+- Listing is old (2025-03-25), so outreach explicitly asks whether the project or similar work is still active.
+- Offer: one narrowly scoped paid milestone first (display bring-up, input/encoder integration, build/tooling, test harness, contained EdgeTX modification), after reviewing repo/hardware and agreeing acceptance criteria.
+- Gmail outreach sent 2026-09-20.
+- Gmail message ID: 1a0bf2e4fe36c169.
+- Status: SENT / awaiting response.
+- Source: https://github.com/EdgeTX/edgetx/discussions/6022
