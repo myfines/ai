@@ -110,3 +110,16 @@ Preferred scalable loop:
 ### Search lesson
 - Search for founders explicitly saying: first token launch, I handle marketing/branding/community, need blockchain developer, need technical partner, need Solana launch help.
 - These are higher-intent than generic Web3 hiring feeds because the technical gap is already stated and tied to an active launch.
+
+
+### 2026-09-20 — GELT / Georgian Lari Digital
+- Source: recent public hiring post indexed from LinkedIn.
+- Project: GELT, described publicly as a Georgian-lari-pegged stablecoin being built on Solana.
+- Public contact: levanikharatishvili@gmail.com.
+- Public need: Solana/Rust developer; Token-2022, Anchor, backend/wallet/oracle integration, testing and audit preparation.
+- Outreach strategy: **did not claim senior Solana/Rust experience**. Offered a small paid trial limited to independently testable work such as TypeScript/Next.js integration, API/backend glue, test automation, docs, dashboards, tooling, or a contained devnet prototype.
+- Explicit custody boundary: no seed phrases/private keys required.
+- Gmail outreach sent successfully on 2026-09-20.
+- Gmail message ID: 1a0bf2d4e4906333.
+- Status: SENT / awaiting response.
+- Source: https://ge.linkedin.com/in/levani-kharatishvili-77b061391
